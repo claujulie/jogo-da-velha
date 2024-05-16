@@ -38,12 +38,11 @@ function newMove(e) {
     }, [100]);
 
     player = player === "X" ? "O" : "X";
-    currentPlayer.textContent = 'JOGADOR DA VEZ = ${player}';
+    currentPlayer.textContent = 'JOGADOR DA VEZ = ';
 }
 
 function check() {
     let playerLastMove = player === "X" ? "O" : "X";
-}
 
 const items = selected
     .map((item, i) => [item, i])
@@ -62,4 +61,5 @@ if (selected.filter((item) => item).length === 9) {
     alert(" DEU VELHA!");
     init();
     return;
+}
 }
