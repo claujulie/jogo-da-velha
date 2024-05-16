@@ -12,9 +12,14 @@ body{
     background-image: #f7f7ff;
 }
 main {
-    display: flex;
+    display: inline-flexbox;
     flex-direction: column;
     gap: 5px;
+    
+}
+image {
+    left: 0dvb;
+position: relative;
 }
 
 h1 {

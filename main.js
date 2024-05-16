@@ -1,6 +1,6 @@
-const currentPlayer = document.querySelector( ".currentPlayer");
+const currentPlayer = document.querySelector(".currentPlayer");
 
-let selected { 
+let selected
 let player = "X";
 
 let positions = [
@@ -56,11 +56,10 @@ for (pos of positions) {
         init();
         return;
     }
-    }
+}
 
-    if (selected.filter((item) => item).length === 9) {
-        alert(" DEU VELHA!");
-        init();
-        return;
-    }
+if (selected.filter((item) => item).length === 9) {
+    alert(" DEU VELHA!");
+    init();
+    return;
 }
