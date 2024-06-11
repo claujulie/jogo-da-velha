@@ -17,7 +17,7 @@ let positions = [
 function init() {
     selected = [];
 
-    currentPlayer.textContent = 'JOGADOR DA VEZ: $ {player}';
+    currentPlayer.textContent = `JOGADOR DA VEZ: ${player}`;
 
     document.querySelectorAll(".game button").forEach((item) => {
         item.textContent = " ";
@@ -38,7 +38,7 @@ function newMove(e) {
     }, [100]);
 
     player = player === "X" ? "O" : "X";
-    currentPlayer.textContent = 'JOGADOR DA VEZ = ';
+    currentPlayer.textContent = `JOGADOR DA VEZ: ${player}`;
 }
 
 function check() {
